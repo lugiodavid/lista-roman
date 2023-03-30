@@ -1,0 +1,22 @@
+<div>
+  <h1>
+    Tabla de alumnos
+  </h1>
+  <table class="table table-stripped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Curso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alumno of alumnos" [ngClass]="alumno.aprove ? 'table-success':'table-danger'">
+        <td>{{alumno.id}}</td>
+        <td>{{alumno.fullName}}</td>
+        <td>{{alumno.email}}</td>
+        <td>{{alumno.course}}</td>
+      </tr>
+    </tbody>
+  </table>
