@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "lista-valarezo": {
+    "lista-roman": {
       "projectType": "application",
       "schematics": {},
       "root": "",
